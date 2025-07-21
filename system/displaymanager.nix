@@ -12,4 +12,6 @@
             # animation = doom;
         };
     };
+
+    service.displayManager.lightdm.enable = false;
 }
