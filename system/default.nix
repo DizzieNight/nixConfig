@@ -9,7 +9,6 @@
         ./audio.nix
         ./boot.nix
         ./users.nix
-        ./hyprland.nix
         ./gamingmode.nix
         ./security.nix
     ];
@@ -25,7 +24,6 @@
             dysk
             sudo
             zsh
-            ly
             home-manager
             brightnessctl
             easyeffects
@@ -96,9 +94,6 @@
                 pkgs.xdg-desktop-portal-hyprland
             ];
         };
-
-        # Enable Ly as the display manager
-        services.displayManager.ly.enable = true;
 
         # Enable touchpad support (enabled default in most desktopManager).
         services.libinput = lib.mkIf config.system.laptop {
