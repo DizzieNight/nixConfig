@@ -1,9 +1,9 @@
 {pkgs, config, ...}:
 {
 
-    # environment.systemPackages = with pkgs; [
-    #     ly
-    # ];
+    environment.systemPackages = with pkgs; [
+        ly
+    ];
 
     # Enable Ly as the display manager
     services.displayManager.ly = {
