@@ -1,4 +1,4 @@
-{pkgs, config, ...}:
+{inputs, lib, pkgs, config, ...}:
 {
 
     # Enable Ly as the display manager
@@ -12,5 +12,5 @@
         };
     };
 
-    service.displayManager.lightdm.enable = false;
+    services.xserver.displayManager.lightdm.enable = false;
 }
