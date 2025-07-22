@@ -7,7 +7,7 @@
         package = pkgs.ly;
         x11Support = true;
         settings = {
-            # animation = doom;
+            animation = "colormix";
             vi_mode = true;
         };
     };
