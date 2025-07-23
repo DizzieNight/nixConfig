@@ -77,7 +77,7 @@
             font-awesome
             noto-fonts-color-emoji
             nerd-fonts.jetbrains-mono
-            nerd-fonts.bitblue-terminal
+            nerd-fonts.bigblue-terminal
             bibata-cursors
         ];
 
