@@ -16,10 +16,19 @@
         xwayland.enable = true;
         systemd.enable = true;
 
-        settings = {
+        settings = 
+        let
+          terminal = "ghostty";
+          fileManager = "superfile";
+          menu = "rofi";
+        in {
             exec-once = [
                 "wl-paste --type text --watch cliphist store"
                 "wl-paste --type image --watch cliphist sore"
+            ];
+
+            monitor = [
+                "eDP-1,preferred,0x1440, 1.566667"
             ];
 
             general = {
@@ -42,17 +51,16 @@
             };
 
             bind = [
-                "$mod, Q, exec, kitty"
-                "$mod, return, exec, $terminal"
+                "$mod, return, exec, ${terminal}"
                 "$mod, C, killactive,"
                 "$mod, escape, exit,"
                 "$mod, F11, fullscreen "
-                "$mod, F, exec, $fileManager"
+                "$mod, F, exec, ${terminal} ${fileManager}"
                 "$mod, B, togglefloating,"
-                "$mod, space, exec, $menu"
+                "$mod, space, exec, ${menu}"
                 "$mod, O, pseudo, # dwindle"
                 "$mod, S, togglesplit, # dwindle"
-                "$mod, T, exec, kitty btop"
+                "$mod, T, exec, ${terminal} btop"
 
                 # Move focus with mod + arrow keys
                 "$mod, h, movefocus, l"
@@ -96,7 +104,7 @@
 
                 # Move/resize windows with mod + LMB/RMB and dragging
                 "$mod, mouse:272, movewindow"
-                "$mod, mouse:273, resizewindow"
+                "$mod, mouse:273, resizeactive"
 
                 # Hyprshot keybinds
                 "$mod, PebooksRINT, exec, hyprshot -m window # Screenshot a window"
@@ -125,7 +133,7 @@
             ];
 
             input = {
-                kb_layout = us;
+                kb_layout = "us";
                 # kb_variant =;
                 # kb_model =;
                 # kb_options =;
@@ -171,33 +179,48 @@
 
                 # Default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
 
-                bezier = {
-                    "easeOutQuint,0.23,1,0.32,1";
-                    "easeInOutCubic,0.65,0.05,0.36,1";
-                    "linear,0,0,1,1";
-                    "almostLinear,0.5,0.5,0.75,1.0";
-                    "quick,0.15,0,0.1,1";
-                };
+                bezier = [
+                    "easeOutQuint,0.23,1,0.32,1"
+                    "easeInOutCubic,0.65,0.05,0.36,1"
+                    "linear,0,0,1,1"
+                    "almostLinear,0.5,0.5,0.75,1.0"
+                    "quick,0.15,0,0.1,1"
+                ];
 
-                animation = {
-                    "global, 1, 10, default";
-                    "border, 1, 5.39, easeOutQuint";
-                    "windows, 1, 4.79, easeOutQuint";
-                    "windowsIn, 1, 4.1, easeOutQuint, popin 87%";
-                    "windowsOut, 1, 1.49, linear, popin 87%";
-                    "fadeIn, 1, 1.73, almostLinear";
-                    "fadeOut, 1, 1.46, almostLinear";
-                    "fade, 1, 3.03, quick";
-                    "layers, 1, 3.81, easeOutQuint";
-                    "layersIn, 1, 4, easeOutQuint, fade";
-                    "layersOut, 1, 1.5, linear, fade";
-                    "fadeLayersIn, 1, 1.79, almostLinear";
-                    "fadeLayersOut, 1, 1.39, almostLinear";
-                    "workspaces, 1, 1.94, almostLinear, fade";
-                    "workspacesIn, 1, 1.21, almostLinear, fade";
-                    "workspacesOut, 1, 1.94, almostLinear, fade";
-                };
+                animation = [
+                    "global, 1, 10, default"
+                    "border, 1, 5.39, easeOutQuint"
+                    "windows, 1, 4.79, easeOutQuint"
+                    "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
+                    "windowsOut, 1, 1.49, linear, popin 87%"
+                    "fadeIn, 1, 1.73, almostLinear"
+                    "fadeOut, 1, 1.46, almostLinear"
+                    "fade, 1, 3.03, quick"
+                    "layers, 1, 3.81, easeOutQuint"
+                    "layersIn, 1, 4, easeOutQuint, fade"
+                    "layersOut, 1, 1.5, linear, fade"
+                    "fadeLayersIn, 1, 1.79, almostLinear"
+                    "fadeLayersOut, 1, 1.39, almostLinear"
+                    "workspaces, 1, 1.94, almostLinear, fade"
+                    "workspacesIn, 1, 1.21, almostLinear, fade"
+                    "workspacesOut, 1, 1.94, almostLinear, fade"
+                ];
             };
+
+            windowrule = [
+                "suppressevent maximize, class:.*"
+                # Fix some dragging issues with XWayland
+               "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+            ];
+
+            windowrulev2 = [
+               "float,class:com.saivert.pwvucontrol, title:Pipewire Volume Control"
+            ];
+
+            layerrule = [
+                "blur,waybar"
+                "blur,rofi"
+            ];
         };
       };
     };
