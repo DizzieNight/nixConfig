@@ -16,8 +16,8 @@
         settings = 
         let
           terminal = "ghostty";
-          fileManager = "superfile";
-          menu = "rofi";
+          fileManager = "ghostty -e spf";
+          menu = "rofi -show drun";
         in {
             exec-once = [
                 "waybar"
@@ -58,7 +58,7 @@
                 "$mod, C, killactive,"
                 "$mod, escape, exit,"
                 "$mod, F11, fullscreen "
-                "$mod, F, exec, ${terminal} ${fileManager}"
+                "$mod, F, exec, ${fileManager}"
                 "$mod, B, togglefloating,"
                 "$mod, space, exec, ${menu}"
                 "$mod, O, pseudo, # dwindle"
