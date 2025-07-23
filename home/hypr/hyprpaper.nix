@@ -1,6 +1,6 @@
 {pkgs, config, ...}:
 {
-    programs.hyprpaper = {
+    services.hyprpaper = {
         enable = true;
         settings = {
             preload = [
