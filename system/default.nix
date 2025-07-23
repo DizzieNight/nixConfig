@@ -11,8 +11,8 @@
         ./users.nix
         ./gamingmode.nix
         ./security.nix
-	./displaymanager.nix
-	./hyprland.nix
+        ./displaymanager.nix
+        ./hyprland.nix
     ];
 
     config = {
@@ -73,10 +73,11 @@
             kubent
             kubetui
             talosctl
-        # Fonts
+        # Fonts/Cursors
             font-awesome
             noto-fonts-color-emoji
             nerd-fonts.jetbrains-mono
+            bibata-cursors
         ];
 
         time.timeZone = "Australia/Melbourne";

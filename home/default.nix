@@ -3,7 +3,7 @@
     imports = [
         ./apps
         ./tools
-        ./hyprland
+        ./hypr
     ];
 
     home = {
