@@ -1,0 +1,90 @@
+/* @define-color main-color #222323 */
+@import '../../.cache/wal/colors-waybar.css';
+/* @import "https://www.nerdfonts.com/assets/css/webfont.css"; */
+
+* {
+  font-family:'BigBlueTermPlusNerdFont';
+  color: @color2;
+}
+
+window#waybar {
+  background: rgba(0,0,0,0.8);
+  /* background: @color0; */
+  border-radius: 5px;
+}
+
+#clock {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#network,
+#power-profiles-daemon {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: @color0;
+  background-color: @color4;
+  margin: 5px 0px 5px 0px;
+  padding: 0px 15px 0px 0px;
+}
+
+#custom-tailscale,
+#battery {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: @color0;
+  background-color: @color4;
+  margin: 5px 0px 5px 0px;
+  padding: 8px;
+}
+
+#custom-volume,
+#backlight,
+#pulseaudio {
+  border-radius: 5px;
+  color: @color0;
+  background-color: @color4;
+  margin: 5px 0px 5px 0px;
+  padding: 8px;
+
+}
+
+#tray,
+#custom-updates {
+  padding-left: 10px;
+}
+
+#workspaces {
+  padding-right: 10px;
+}
+
+#workspaces button.active {
+  background-color: @color1;
+  /* padding: 0px 1px 0px 1px; */
+  margin: 5px 0px 5px 0px;
+} 
+
+#window {
+  padding-left: 10px;
+  font-size: 9px;
+}
+
+#pulseaudio-slider slider { /* Controls the style of the slider handle */
+  min-height: 0px;
+  min-width: 0px;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+#pulseaudio-slider trough { /* Controls the style of the part of the bar that has not been filled */
+  min-height: 10px;
+  min-width: 80px;
+  border-radius: 5px;
+  background-color: @color9;
+}
+#pulseaudio-slider highlight { /* Controls the style of the part of the bar that has been filled */
+  min-width: 10px;
+  border-radius: 5px;
+  background-color: @color6;
+}
