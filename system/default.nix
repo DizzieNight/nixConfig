@@ -73,13 +73,15 @@
             kubent
             kubetui
             talosctl
-        # Fonts/Cursors
+        ];
+
+        fonts.packages = with pkgs; [
             font-awesome
             noto-fonts-color-emoji
             nerd-fonts.jetbrains-mono
             nerd-fonts.bigblue-terminal
             bibata-cursors
-        ];
+        ]
 
         time.timeZone = "Australia/Melbourne";
 
