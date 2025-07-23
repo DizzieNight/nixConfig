@@ -4,6 +4,7 @@
         ./cliphist.nix
         ./hyprland.nix
         ./waybar/waybar.nix
+        ./hyprpaper.nix
     ];
 
     options = {

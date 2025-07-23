@@ -121,6 +121,9 @@
             enable = true;
         };
 
+        # Enable tailscale
+        services.tailscale.enable = true;
+
         # Custom Modules
         # hyprland.enable = lib.mkDefault true;
         gamingmode.enable = lib.mkDefault true;
