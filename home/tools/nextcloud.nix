@@ -1,7 +1,7 @@
 {pkgs, config, ...}:
 {
     config = {
-        programs.nextcloud-client = {
+        services.nextcloud-client = {
             enable = true;
             starInBackground = true;
         };
