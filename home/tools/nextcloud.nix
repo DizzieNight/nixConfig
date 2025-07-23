@@ -4,6 +4,6 @@
         programs.nextcloud-client = {
             enable = true;
             starInBackground = true;
-        }
+        };
     };
 }
