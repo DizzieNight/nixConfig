@@ -5,6 +5,7 @@
         ./hyprland.nix
         ./waybar/waybar.nix
         ./hyprpaper.nix
+        ./rofi/rofi.nix
     ];
 
     options = {
