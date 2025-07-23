@@ -3,7 +3,7 @@
     config = {
         services.nextcloud-client = {
             enable = true;
-            starInBackground = true;
+            startInBackground = true;
         };
     };
 }
