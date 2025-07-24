@@ -27,7 +27,6 @@
             neovim
             dysk
             sudo
-            zsh
             zsh-fzf-tab
             home-manager
             brightnessctl
