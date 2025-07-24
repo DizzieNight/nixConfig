@@ -14,6 +14,7 @@
         sessionVariables = {
             EDITOR = "nvim";
         };
+        enableNixpkgsReleaseChecked = false;
     };
 
     programs.home-manager.enable = true;
