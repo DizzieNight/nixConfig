@@ -66,7 +66,7 @@
             bluetui
         # Programming Languages
             dart
-            libgcc
+            gcc
         # K8s Tools
             kubectl
             kubectx
