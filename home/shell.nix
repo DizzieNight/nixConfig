@@ -10,6 +10,7 @@
 
         shellAliases = {
             update = "sudo nixos-rebuild switch --flake /home/zander/.nixConfig/#${osConfig.networking.hostName}";
+            upgrade = "sudo nix flake update";
         };
 
         oh-my-zsh = {
@@ -22,5 +23,8 @@
             ];
             # theme = "powerlevel10k";
         };
+    };
+    programs.fzf = {
+        enableZshIntegration = true;
     };
 }
