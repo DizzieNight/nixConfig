@@ -14,6 +14,7 @@
         ./displaymanager.nix
         ./hyprland.nix
         ./networking.nix
+        ./shell.nix
     ];
 
     config = {
