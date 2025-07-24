@@ -13,6 +13,7 @@
         ./security.nix
         ./displaymanager.nix
         ./hyprland.nix
+        ./networking.nix
     ];
 
     config = {
@@ -108,8 +109,6 @@
         # Use latest kernel.
         boot.kernelPackages = pkgs.linuxPackages_latest;
 
-        networking.networkmanager.enable = true;
-        
         # services.xserver.enable = true;
 
         xdg.portal = {
