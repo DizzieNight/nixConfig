@@ -5,8 +5,10 @@
         enableCompletion = true;
         autosuggestion.enable = true;
         syntaxHighlighting.enable = true;
-        initExtra = "source ~/.p10k.zsh";
-        initContent = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+        initContent = ''
+            source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+            source ~/.p10k.zsh
+        '';
 
         shellAliases = {
             update = "sudo nixos-rebuild switch --flake /home/zander/.nixConfig/#${osConfig.networking.hostName}";
@@ -18,13 +20,18 @@
             plugins = [
                 "git"
                 "kubectl"
-                "fzf-tab"
-                "fzf-history"
+                # "fzf-tab"
+                # "fzf-history"
             ];
             # theme = "powerlevel10k";
         };
     };
     programs.fzf = {
+        enable = true;
         enableZshIntegration = true;
+        historyWidgetOptions = [
+            "--sort"
+            "--layout=reverse --border"
+        ];
     };
 }
