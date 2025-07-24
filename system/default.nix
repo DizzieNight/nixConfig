@@ -27,7 +27,11 @@
             neovim
             dysk
             sudo
+            fzf
+            fzf-zsh
             zsh-fzf-tab
+            zsh-fzf-history-search
+            zsh-powerlevel10k
             home-manager
             brightnessctl
             easyeffects
