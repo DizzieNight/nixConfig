@@ -4,6 +4,7 @@
         ./apps
         ./tools
         ./hypr
+        ./shell.nix
     ];
 
     home = {

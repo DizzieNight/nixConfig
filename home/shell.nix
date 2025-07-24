@@ -1,20 +1,20 @@
-{pkgs, config, ...}:
+{osConfig, pkgs, ...}:
 {
     programs.zsh = {
         enable = true;
-        # enableCompletions = true;
-        autosuggestions.enable = true;
+        enableCompletion = true;
+        autosuggestion.enable = true;
         syntaxHighlighting.enable = true;
-        promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+        initExtra = "source ~/.p10k.zsh";
+        initContent = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
 
         shellAliases = {
-            update = "sudo nixos-rebuild switch --flake /home/zander/.nixConfig/#${config.networking.hostName}";
+            update = "sudo nixos-rebuild switch --flake /home/zander/.nixConfig/#${osConfig.networking.hostName}";
         };
 
         oh-my-zsh = {
             enable = true;
             plugins = [
-                # "thefuck"
                 "git"
                 "kubectl"
                 "fzf-tab"
