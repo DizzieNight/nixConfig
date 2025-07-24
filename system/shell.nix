@@ -15,10 +15,10 @@
         ohMyZsh = {
             enable = true;
             plugins = [
-                "thefuck"
+                # "thefuck"
                 "git"
                 "kubectl"
-                "fzf-zsh-plugin"
+                "fzf-tab"
             ];
             theme = "robbyrussell";
         };
