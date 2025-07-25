@@ -20,8 +20,8 @@
           menu = "rofi -show drun";
         in {
             exec-once = [
-                "waybar"
                 "hyprpaper"
+                "waybar"
                 "wl-paste --type text --watch cliphist store"
                 "wl-paste --type image --watch cliphist sore"
             ];
