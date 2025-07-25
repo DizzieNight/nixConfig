@@ -1,0 +1,14 @@
+vim.opt.number = true               -- Show line numbers
+vim.opt.relativenumber = true       -- Show relative line numbers
+vim.opt.tabstop = 4                 -- Number of spaces that a <Tab> counts for
+vim.opt.shiftwidth = 4              -- Number of spaces to use for each step of (auto)indent
+vim.opt.autoindent = true
+vim.opt.expandtab = true            -- Use spaces instead of tabs
+vim.opt.ignorecase = true           -- Ignore case when searching
+vim.opt.smartcase = true            -- Override ignorecase if search contains uppercase
+vim.opt.scrolloff = 8
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.opt.guicursor = ""
+vim.opt.termguicolors = true
+vim.opt.clipboard = "unnamedplus"

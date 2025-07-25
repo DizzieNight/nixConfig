@@ -5,6 +5,7 @@
         ./tools
         ./hypr
         ./shell.nix
+        ./external
     ];
 
     home = {

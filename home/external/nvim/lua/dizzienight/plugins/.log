@@ -1,0 +1,402 @@
+--- Startup times for process: Primary (or UI client) ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.001  000.001: --- NVIM STARTING ---
+000.684  000.683: event init
+000.938  000.254: early init
+004.123  003.186: locale set
+004.199  000.075: init first window
+004.877  000.678: inits 1
+004.889  000.013: window checked
+004.967  000.078: parsing arguments
+005.955  000.073  000.073: require('vim.shared')
+006.130  000.083  000.083: require('vim.inspect')
+006.216  000.069  000.069: require('vim._options')
+006.220  000.257  000.105: require('vim._editor')
+006.222  000.389  000.059: require('vim._init_packages')
+006.225  000.869: init lua interpreter
+006.295  000.069: expanding arguments
+006.320  000.025: inits 2
+006.791  000.471: init highlight
+006.803  000.012: clear screen
+007.008  000.019  000.019: require('vim.keymap')
+008.305  000.216  000.216: sourcing nvim_exec2()
+008.429  001.623  001.389: require('vim._defaults')
+008.431  000.005: init default mappings & autocommands
+008.918  000.062  000.062: sourcing /usr/share/nvim/runtime/ftplugin.vim
+008.973  000.027  000.027: sourcing /usr/share/nvim/runtime/indent.vim
+009.126  000.097  000.097: sourcing /usr/share/nvim/archlinux.lua
+009.130  000.121  000.024: sourcing /etc/xdg/nvim/sysinit.vim
+009.665  000.106  000.106: require('dizzienight.settings')
+010.038  000.372  000.372: require('dizzienight.remap')
+011.114  000.788  000.788: require('lazy')
+011.198  000.031  000.031: require('ffi')
+011.310  000.059  000.059: require('vim.fs')
+011.502  000.185  000.185: require('vim.uri')
+011.526  000.321  000.077: require('vim.loader')
+012.099  000.547  000.547: require('lazy.stats')
+012.316  000.174  000.174: require('lazy.core.util')
+012.567  000.247  000.247: require('lazy.core.config')
+012.940  000.094  000.094: require('lazy.core.handler')
+013.501  000.185  000.185: require('lazy.pkg')
+013.512  000.403  000.218: require('lazy.core.meta')
+013.524  000.580  000.177: require('lazy.core.plugin')
+013.541  000.972  000.298: require('lazy.core.loader')
+015.335  000.332  000.332: require('lazy.async')
+015.704  000.098  000.098: require('lazy.manage.process')
+015.764  000.056  000.056: require('lazy.terminal')
+015.775  000.434  000.280: require('lazy.manage.task')
+015.779  001.008  000.242: require('lazy.manage.runner')
+015.784  001.206  000.198: require('lazy.manage')
+015.789  001.394  000.189: require('lazy.view.commands')
+015.879  000.052  000.052: require('lazy.core.fragments')
+017.403  000.066  000.066: require('lazy.core.handler.event')
+017.409  000.149  000.083: require('lazy.core.handler.ft')
+017.502  000.089  000.089: require('lazy.core.handler.cmd')
+017.724  000.217  000.217: require('lazy.core.handler.keys')
+018.510  000.147  000.147: sourcing nvim_exec2() called at /usr/share/nvim/runtime/filetype.lua:0
+018.516  000.252  000.105: sourcing /usr/share/nvim/runtime/filetype.lua
+018.521  000.312  000.061: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+019.326  000.581  000.581: require('snacks')
+019.330  000.625  000.044: sourcing /home/zander/.local/share/nvim/lazy/snacks.nvim/plugin/snacks.lua
+019.335  000.652  000.027: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+019.346  000.004  000.004: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+019.363  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.003  000.050  000.050: sourcing /home/zander/.local/share/nvim/lazy/nvim-web-devicons/plugin/nvim-web-devicons.vim
+020.008  000.079  000.030: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.017  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.027  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.039  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.054  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.516  000.035  000.035: sourcing /home/zander/.local/share/nvim/lazy/plenary.nvim/plugin/plenary.vim
+020.521  000.062  000.027: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.528  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.537  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.567  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+020.573  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+021.206  000.346  000.346: require('gitsigns')
+021.521  000.283  000.283: require('gitsigns.highlight')
+021.674  000.125  000.125: require('gitsigns.debug.log')
+021.960  000.283  000.283: require('gitsigns.config')
+022.719  000.099  000.099: require('gitsigns.debounce')
+022.737  001.960  000.824: sourcing /home/zander/.local/share/nvim/lazy/gitsigns.nvim/plugin/gitsigns.lua
+022.743  001.986  000.026: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+022.755  000.005  000.005: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+022.770  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+022.857  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+022.869  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+023.439  000.327  000.327: sourcing /home/zander/.local/share/nvim/lazy/telescope.nvim/plugin/telescope.lua
+023.445  000.356  000.029: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+023.453  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+023.463  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+026.293  000.439  000.439: require('vim.ui')
+026.301  000.645  000.206: require('dressing.patch')
+026.304  002.193  001.548: require('dressing')
+026.317  002.268  000.075: sourcing /home/zander/.local/share/nvim/lazy/dressing.nvim/plugin/dressing.lua
+026.323  002.296  000.028: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+026.336  000.005  000.005: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+026.351  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+026.368  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+026.374  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+026.563  000.084  000.084: require('flutter-tools.lazy')
+026.577  000.183  000.099: require('flutter-tools')
+026.707  000.058  000.058: require('flutter-tools.utils.path')
+026.714  000.135  000.077: require('flutter-tools.config')
+026.824  000.054  000.054: require('flutter-tools.log')
+027.455  000.061  000.061: require('nvim-treesitter.utils')
+028.269  000.047  000.047: require('vim.treesitter.language')
+028.306  000.033  000.033: require('vim.func')
+028.352  000.040  000.040: require('vim.func._memoize')
+028.473  000.359  000.238: require('vim.treesitter.query')
+028.536  000.060  000.060: require('vim.treesitter._range')
+028.565  000.618  000.199: require('vim.treesitter.languagetree')
+028.576  000.684  000.066: require('vim.treesitter')
+029.587  002.129  001.445: require('nvim-treesitter.parsers')
+030.039  000.094  000.094: require('nvim-treesitter.compat')
+030.300  000.177  000.177: require('nvim-treesitter.ts_utils')
+030.313  000.271  000.094: require('nvim-treesitter.tsrange')
+030.378  000.063  000.063: require('nvim-treesitter.caching')
+030.401  000.593  000.165: require('nvim-treesitter.query')
+030.433  000.754  000.161: require('nvim-treesitter.configs')
+030.441  000.851  000.097: require('nvim-treesitter.info')
+030.566  000.123  000.123: require('nvim-treesitter.shell_command_selectors')
+030.615  003.332  000.168: require('nvim-treesitter.install')
+030.670  000.052  000.052: require('nvim-treesitter.statusline')
+030.748  000.077  000.077: require('nvim-treesitter.query_predicates')
+030.757  003.791  000.330: require('nvim-treesitter')
+030.979  000.171  000.171: require('vim.iter')
+032.218  005.291  001.329: sourcing /home/zander/.local/share/nvim/lazy/nvim-treesitter/plugin/nvim-treesitter.lua
+032.227  005.323  000.032: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+032.241  000.004  000.004: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+032.273  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+032.472  000.029  000.029: sourcing /home/zander/.local/share/nvim/lazy/themery.nvim/plugin/themery.vim
+032.475  000.058  000.029: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+032.482  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+032.507  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+033.272  000.146  000.146: require('themery.constants')
+033.357  000.081  000.081: require('themery.utils')
+033.423  000.064  000.064: require('themery.filesystem')
+033.495  000.070  000.070: require('themery.config')
+033.498  000.548  000.186: require('themery.persistence')
+033.593  000.046  000.046: require('themery.window')
+033.598  000.098  000.052: require('themery.controller')
+034.159  000.005  000.005: sourcing nvim_exec2() called at ColorSchemePre Autocommands for "*":0
+034.169  000.001  000.001: sourcing nvim_exec2() called at ColorSchemePre Autocommands for "*":0
+034.918  000.539  000.539: require('gruvbox')
+034.981  000.057  000.057: require('vim.version')
+037.508  003.164  002.568: sourcing /home/zander/.local/share/nvim/lazy/gruvbox.nvim/colors/gruvbox.lua
+037.720  005.208  001.391: require('themery')
+038.321  000.108  000.108: sourcing /home/zander/.local/share/nvim/lazy/nvim-dap/plugin/dap.lua
+038.327  000.136  000.028: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+038.337  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+038.348  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+038.573  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+038.583  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+038.592  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+038.597  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+038.825  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+038.832  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+039.473  000.126  000.126: require('vim.lsp.log')
+039.983  000.506  000.506: require('vim.lsp.protocol')
+040.300  000.312  000.312: require('vim.lsp.util')
+040.409  000.047  000.047: require('vim.lsp.sync')
+040.417  000.113  000.066: require('vim.lsp._changetracking')
+040.916  000.167  000.167: require('vim.lsp._transport')
+040.938  000.518  000.351: require('vim.lsp.rpc')
+041.022  001.855  000.280: require('vim.lsp')
+041.431  000.406  000.406: require('lspconfig.util')
+042.938  003.849  001.588: sourcing /home/zander/.local/share/nvim/lazy/nvim-lspconfig/plugin/lspconfig.lua
+042.944  003.876  000.027: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+042.957  000.005  000.005: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+042.988  000.001  000.001: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+043.316  000.067  000.067: sourcing /usr/share/nvim/runtime/plugin/editorconfig.lua
+043.321  000.091  000.024: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+043.526  000.185  000.185: sourcing /usr/share/nvim/runtime/plugin/gzip.vim
+043.529  000.200  000.015: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+043.616  000.068  000.068: sourcing /usr/share/nvim/runtime/plugin/man.lua
+043.619  000.083  000.014: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+044.122  000.224  000.224: sourcing /usr/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+044.137  000.501  000.277: sourcing /usr/share/nvim/runtime/plugin/matchit.vim
+044.140  000.515  000.014: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+044.290  000.130  000.130: sourcing /usr/share/nvim/runtime/plugin/matchparen.vim
+044.293  000.146  000.015: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+044.771  000.237  000.237: sourcing /usr/share/nvim/runtime/pack/dist/opt/netrw/plugin/netrwPlugin.vim
+044.785  000.470  000.232: sourcing /usr/share/nvim/runtime/plugin/netrwPlugin.vim
+044.787  000.485  000.015: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+044.889  000.078  000.078: sourcing /usr/share/nvim/runtime/plugin/osc52.lua
+044.891  000.097  000.019: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+045.058  000.146  000.146: sourcing /usr/share/nvim/runtime/plugin/rplugin.vim
+045.068  000.171  000.026: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+045.149  000.055  000.055: sourcing /usr/share/nvim/runtime/plugin/shada.vim
+045.151  000.073  000.019: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+045.188  000.014  000.014: sourcing /usr/share/nvim/runtime/plugin/spellfile.vim
+045.190  000.033  000.019: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+045.302  000.091  000.091: sourcing /usr/share/nvim/runtime/plugin/tarPlugin.vim
+045.304  000.108  000.017: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+045.381  000.055  000.055: sourcing /usr/share/nvim/runtime/plugin/tohtml.lua
+045.383  000.072  000.017: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+045.515  000.017  000.017: sourcing /usr/share/nvim/runtime/plugin/tutor.vim
+045.517  000.036  000.019: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+045.687  000.125  000.125: sourcing /usr/share/nvim/runtime/plugin/zipPlugin.vim
+045.690  000.142  000.017: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+046.105  000.056  000.056: require('mason-core.path')
+046.330  000.047  000.047: require('mason-core.functional.data')
+046.403  000.063  000.063: require('mason-core.functional.function')
+046.515  000.102  000.102: require('mason-core.functional.list')
+046.616  000.052  000.052: require('mason-core.functional.relation')
+046.668  000.048  000.048: require('mason-core.functional.logic')
+046.716  000.045  000.045: require('mason-core.functional.number')
+046.789  000.064  000.064: require('mason-core.functional.string')
+046.850  000.057  000.057: require('mason-core.functional.table')
+046.905  000.051  000.051: require('mason-core.functional.type')
+046.910  000.717  000.190: require('mason-core.functional')
+046.953  000.846  000.129: require('mason-core.platform')
+047.028  000.073  000.073: require('mason.settings')
+047.035  001.058  000.084: require('mason-core.installer.InstallLocation')
+047.283  000.126  000.126: require('mason-core.log')
+047.287  000.179  000.053: require('mason-core.EventEmitter')
+047.365  000.077  000.077: require('mason-registry.sources')
+047.373  000.336  000.080: require('mason-registry')
+047.375  001.544  000.150: require('mason')
+047.930  000.291  000.291: require('mason.api.command')
+047.943  037.900  008.049: require('dizzienight.lazy')
+048.145  000.201  000.201: require('dizzienight.plugins-init')
+049.003  000.285  000.285: require('lualine_require')
+049.327  000.934  000.650: require('lualine')
+049.973  000.021  000.021: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+050.805  000.064  000.064: require('lualine.themes.gruvbox_dark')
+051.285  000.010  000.010: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.305  000.005  000.005: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.315  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.325  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.334  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.413  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.422  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.430  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.437  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.445  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.542  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.551  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.559  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.567  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.573  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.580  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.587  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.594  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.601  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+051.617  000.012  000.012: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.133  000.008  000.008: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.149  000.008  000.008: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.367  000.006  000.006: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.393  000.018  000.018: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.401  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.408  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.415  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.423  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.430  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.450  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.457  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.464  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.470  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.477  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.484  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.493  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.502  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.553  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.560  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.567  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.573  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.579  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.586  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.733  000.007  000.007: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.741  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.746  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+053.754  000.005  000.005: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.814  000.030  000.030: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.839  000.004  000.004: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.849  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.860  000.004  000.004: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.871  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.881  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.887  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.899  000.004  000.004: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.907  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.914  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.928  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.936  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.965  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.976  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.984  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.993  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+055.998  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.003  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.034  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.041  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.048  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.056  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.068  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.077  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.090  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.096  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.103  000.003  000.003: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.110  000.002  000.002: sourcing nvim_exec2() called at /home/zander/.config/nvim/init.lua:0
+056.230  000.073  000.073: require('lualine.utils.mode')
+056.436  008.183  006.826: require('dizzienight.plugins.lualine')
+056.484  000.046  000.046: require('dizzienight.plugins.gitsigns')
+056.724  000.199  000.199: require('telescope.builtin')
+056.754  000.268  000.069: require('dizzienight.plugins.telescope')
+056.894  000.031  000.031: require('bufferline.lazy')
+056.960  000.059  000.059: require('bufferline.commands')
+057.101  000.137  000.137: require('bufferline.config')
+057.107  000.315  000.088: require('bufferline')
+057.328  000.072  000.072: require('bufferline.utils')
+057.331  000.210  000.139: require('bufferline.groups')
+057.400  000.039  000.039: require('bufferline.constants')
+057.439  000.036  000.036: require('bufferline.colors')
+057.688  000.066  000.066: require('bufferline.highlights')
+057.861  000.006  000.006: require('vim.F')
+059.614  001.097  001.097: require('bufferline.hover')
+059.909  000.127  000.127: require('bufferline.ui')
+059.965  003.209  001.313: require('dizzienight.plugins.bufferline')
+060.198  000.032  000.032: require('harpoon.utils')
+060.203  000.145  000.113: require('harpoon.logger')
+060.417  000.086  000.086: require('harpoon.autocmd')
+060.422  000.156  000.069: require('harpoon.buffer')
+060.478  000.055  000.055: require('harpoon.extensions')
+060.483  000.278  000.068: require('harpoon.ui')
+060.685  000.055  000.055: require('plenary.bit')
+060.725  000.038  000.038: require('plenary.functional')
+060.795  000.269  000.176: require('plenary.path')
+060.807  000.323  000.054: require('harpoon.data')
+060.863  000.055  000.055: require('harpoon.config')
+060.920  000.056  000.056: require('harpoon.list')
+066.233  006.223  005.366: require('harpoon')
+066.354  006.387  000.164: require('dizzienight.plugins.harpoon')
+067.563  000.049  000.049: require('nvim-treesitter.highlight')
+067.570  001.213  001.164: require('dizzienight.plugins.treesitter')
+067.572  019.425  000.118: require('dizzienight.plugins')
+067.642  000.068  000.068: require('dizzienight.lsp-enable')
+067.945  000.258  000.258: require('vim.diagnostic')
+067.956  000.312  000.054: require('dizzienight.lsp-settings')
+067.958  058.786  000.403: require('dizzienight')
+067.960  058.802  000.016: sourcing /home/zander/.config/nvim/init.lua
+067.968  000.526: sourcing vimrc file(s)
+068.182  000.037  000.037: sourcing /usr/share/nvim/runtime/filetype.lua
+068.447  000.086  000.086: sourcing /usr/share/nvim/runtime/syntax/synload.vim
+068.542  000.290  000.204: sourcing /usr/share/nvim/runtime/syntax/syntax.vim
+068.560  000.264: inits 3
+071.029  002.469: reading ShaDa
+074.106  002.136  002.136: require('vim.filetype')
+076.559  001.299  001.299: sourcing /usr/share/nvim/runtime/ftplugin/vim.vim
+077.849  000.612  000.612: sourcing /usr/share/nvim/runtime/indent/vim.vim
+085.153  000.250  000.250: require('vim.treesitter.highlighter')
+101.000  000.073  000.073: require('gitsigns.status')
+101.215  000.210  000.210: require('gitsigns.async')
+101.492  000.191  000.191: require('gitsigns.util')
+101.755  000.060  000.060: require('gitsigns.system')
+101.759  000.174  000.113: require('gitsigns.git.cmd')
+101.822  000.062  000.062: require('gitsigns.git.errors')
+101.945  000.067  000.067: require('gitsigns.message')
+101.950  000.126  000.060: require('gitsigns.git.version')
+101.960  000.465  000.104: require('gitsigns.git.repo')
+101.967  000.748  000.092: require('gitsigns.git')
+102.068  000.099  000.099: require('gitsigns.cache')
+102.226  000.065  000.065: require('gitsigns.diff')
+102.422  000.195  000.195: require('gitsigns.hunks')
+102.556  000.133  000.133: require('gitsigns.signs')
+102.583  000.514  000.122: require('gitsigns.manager')
+102.594  001.790  000.146: require('gitsigns.attach')
+102.714  000.081  000.081: require('gitsigns.current_line_blame')
+102.890  000.109  000.109: require('vim._system')
+105.129  000.412  000.412: require('editorconfig')
+105.573  027.855: opening buffers
+107.299  000.259  000.259: require('bufferline.state')
+107.321  001.490: BufEnter autocommands
+107.326  000.005: editing files in windows
+107.446  000.120: VimEnter autocommands
+107.449  000.003: before starting main loop
+108.071  000.151  000.151: require('bufferline.pick')
+108.187  000.114  000.114: require('bufferline.duplicates')
+108.466  000.019  000.019: sourcing nvim_exec2()
+108.475  000.285  000.267: require('bufferline.diagnostics')
+108.668  000.190  000.190: require('bufferline.models')
+108.671  000.962  000.222: require('bufferline.buffers')
+109.155  000.229  000.229: require('nvim-web-devicons.filetypes')
+109.956  000.590  000.590: require('nvim-web-devicons.default.icons_by_filename')
+114.111  004.150  004.150: require('nvim-web-devicons.default.icons_by_file_extension')
+114.292  000.175  000.175: require('nvim-web-devicons.default.icons_by_operating_system')
+114.346  000.051  000.051: require('nvim-web-devicons.default.icons_by_desktop_environment')
+114.399  000.050  000.050: require('nvim-web-devicons.default.icons_by_window_manager')
+114.401  005.156  000.140: require('nvim-web-devicons.icons-default')
+114.913  006.169  000.784: require('nvim-web-devicons')
+119.417  000.105  000.105: require('bufferline.numbers')
+119.667  000.065  000.065: require('bufferline.sorters')
+119.797  000.068  000.068: require('bufferline.tabpages')
+119.966  000.124  000.124: require('bufferline.offset')
+120.018  000.046  000.046: require('bufferline.custom_area')
+120.540  005.552: first screen update
+120.543  000.003: --- NVIM STARTED ---
+

@@ -9,6 +9,7 @@
         settings = {
             animation = "colormix";
             vi_mode = true;
+            # session_log = "/home/zander/.logs/session_log";
         };
     };
 
