@@ -1,4 +1,7 @@
-{lib, osConfig, pkgs, ...}:
+{user, lib, osConfig, pkgs, ...}:
 {
-    accounts.email.accounts.${osConfig.}
+    programs.thunderbird = {
+        enable = true;
+        package = pkgs.thunderbird;
+    };
 }

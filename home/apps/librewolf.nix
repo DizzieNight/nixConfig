@@ -5,6 +5,6 @@
         package = pkgs.librewolf;
         settings = {
             "identity.fxaccounts.enabled" = true;
-        }
+        };
     };
 }
