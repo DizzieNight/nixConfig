@@ -6,6 +6,6 @@
         enableZshIntegration = true;
         settings = {
             confirm-close-surface = false;
-        }
-    }
+        };
+    };
 }
