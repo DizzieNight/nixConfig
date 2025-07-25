@@ -17,11 +17,12 @@
       let
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
+        user = zander;
       in
       {
         nixosConfigurations = {
             fw13 = nixpkgs.lib.nixosSystem {
-                specialArgs = {inherit inputs system;};
+                specialArgs = {inherit user inputs system;};
                 modules = [
                     ./hosts/fw13/configuration.nix
                     ./system

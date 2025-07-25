@@ -1,6 +1,6 @@
-{pkgs, ...}:
+{user, pkgs, ...}:
 {
-  users.users.zander = {
+  users.users.${user} = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [

@@ -12,28 +12,16 @@
     ];
 
   home-manager = {
-    extraSpecialArgs = {inherit inputs;};
+    extraSpecialArgs = {inherit user inputs;};
     users = {
-        zander = import ../../home;
+        ${user} = import ../../home;
     };
   };
 
   # Define Hostname
   networking.hostName = "fw13";
 
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
   system.stateVersion = "25.05"; # Did you read the comment?
-
-  # Enable Nix Flakes
-  nix.settings.experimental-features = ["nix-command" "flakes"];
-
-  # Allow unfree licensed programs
-  nixpkgs.config.allowUnfree = true;
-
-  # Enable flatpak
-  services.flatpak.enable = true;
 
   system.laptop = true; 
 
