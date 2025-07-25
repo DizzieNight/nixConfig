@@ -24,6 +24,7 @@
                 "waybar"
                 "wl-paste --type text --watch cliphist store"
                 "wl-paste --type image --watch cliphist sore"
+                ""${pkgs.nextcloud-client}" --background"
             ];
 
             monitor = [

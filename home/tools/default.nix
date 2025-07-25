@@ -6,5 +6,6 @@
         ./btop.nix
         ./ghostty.nix
         ./fastfetch.nix
+        ./keychain.nix
     ];
 }
