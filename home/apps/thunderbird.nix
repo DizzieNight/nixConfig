@@ -3,6 +3,9 @@
     programs.thunderbird = {
         enable = true;
         package = pkgs.thunderbird;
-        profiles.${user}.name = "personal";
+        profiles.${user} ={
+            name = ${user};
+            isDefault = true;
+        };
     };
 }
