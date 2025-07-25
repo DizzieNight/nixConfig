@@ -7,5 +7,6 @@
         ./ghostty.nix
         ./fastfetch.nix
         ./keychain.nix
+        ./shell.nix
     ];
 }

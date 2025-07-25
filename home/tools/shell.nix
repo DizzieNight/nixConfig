@@ -13,6 +13,7 @@
         shellAliases = {
             update = "sudo nixos-rebuild switch --flake /home/zander/.nixConfig/";
             upgrade = "sudo nix flake update --flake /home/zander/.nixConfig/";
+            n = "nvim";
         };
 
         oh-my-zsh = {

@@ -4,7 +4,6 @@
         ./apps
         ./tools
         ./hypr
-        ./shell.nix
         ./external
     ];
 
