@@ -65,7 +65,6 @@
             impala
             inkscape
             kitty
-            btop
             superfile
             ghostty
             bluetui
