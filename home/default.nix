@@ -15,6 +15,11 @@
             EDITOR = "nvim";
         };
         enableNixpkgsReleaseCheck = false;
+        pointerCursor = {
+            package = pkgs.bibata-cursors;
+            name = "Bibata-Modern-Classic";
+            size = 20;
+        };
     };
 
     programs.home-manager.enable = true;

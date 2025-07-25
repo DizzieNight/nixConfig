@@ -86,7 +86,6 @@
             noto-fonts-color-emoji
             nerd-fonts.jetbrains-mono
             nerd-fonts.bigblue-terminal
-            bibata-cursors
         ];
 
         time.timeZone = "Australia/Melbourne";
