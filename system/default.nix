@@ -66,7 +66,7 @@
             inkscape
             kitty
             superfile
-            ghostty
+            # ghostty
             bluetui
         # Programming Languages
             dart
