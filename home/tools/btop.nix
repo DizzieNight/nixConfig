@@ -3,6 +3,10 @@
     programs.btop = {
         enable = true;
         package = pkgs.btop;
-        # themes = 
-    }
+        settings = {
+            vim_keys = true;
+            graph_symbol = "block";
+            proc_tree = true;
+        };
+    };
 }
