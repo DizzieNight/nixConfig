@@ -11,8 +11,8 @@
         '';
 
         shellAliases = {
-            update = "sudo nixos-rebuild switch --flake /home/zander/.nixConfig/#${osConfig.networking.hostName}";
-            upgrade = "sudo nix flake update";
+            update = "sudo nixos-rebuild switch --flake /home/zander/.nixConfig/";
+            upgrade = "sudo nix flake update --flake /home/zander/.nixConfig/";
         };
 
         oh-my-zsh = {
