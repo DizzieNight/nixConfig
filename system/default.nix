@@ -34,8 +34,6 @@
             brightnessctl
             easyeffects
             fprintd
-            iwd
-            power-profiles-daemon
             pwvucontrol
             tailscale
             tealdeer
@@ -96,6 +94,12 @@
         # Enable touchpad support (enabled default in most desktopManager).
         services.libinput = lib.mkIf config.system.laptop {
             enable = true;
+        };
+
+        # Enable power-profiles-daemon
+        services.power-profiles-daemon = {
+            enable = true;
+            package = pkgs.power-profiles-daemon;
         };
 
         # Enable tailscale

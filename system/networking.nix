@@ -3,10 +3,10 @@
     networking = {
         networkmanager = {
             enable = true;
-            wifi.backend = "iwd";
+            # wifi.backend = "iwd";
         };
         wireless.iwd = {
-            enable = true;
+            enable = false;
             settings = {
                 IPv6 = {
                     Enabled = true;
