@@ -1,9 +1,9 @@
 {pkgs, config, ...}:
 {
-    programs.keychain = {
-        enable = true;
-        package = pkgs.keychain;
-    };
+    # programs.keychain = {
+    #     enable = true;
+    #     package = pkgs.keychain;
+    # };
     services.pass-secret-service = {
         enable = true;
         package = pkgs.pass;

@@ -10,7 +10,7 @@
         enable = true;
         package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
         portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
-        xwayland.enable = true;
+        # xwayland.enable = true;
         systemd.enable = false;
 
         settings = 
@@ -20,10 +20,10 @@
           menu = "rofi -show drun";
         in {
             exec-once = [
-                "hyprpaper"
+                # "hyprpaper"
                 "waybar"
-                "wl-paste --type text --watch cliphist store"
-                "wl-paste --type image --watch cliphist sore"
+                # "wl-paste --type text --watch cliphist store"
+                # "wl-paste --type image --watch cliphist sore"
                 # ""${pkgs.nextcloud-client}" --background"
             ];
 
@@ -44,6 +44,7 @@
             env = [
                 "HYPRCURSOR_SIZE,20"
                 "HYPRCURSOR_THEME,Bibata-Modern-Classic"
+                "XDG_CURRENT_DESKTOP,Hyprland"
             ];
 
             dwindle = {

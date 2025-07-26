@@ -68,17 +68,17 @@
             LC_TIME = "en_AU.UTF-8";
         };
 
-        services.xserver.xkb = {
-            layout = "au";
-            variant = "";
-        };
+        # services.xserver.xkb = {
+        #     layout = "au";
+        #     variant = "";
+        # };
 
         services.openssh.enable = true;
 
         # Use latest kernel.
         boot.kernelPackages = pkgs.linuxPackages_latest;
 
-        services.xserver.enable = true;
+        # services.xserver.enable = false;
         programs.xwayland.enable = true;
 
         xdg.portal = {
