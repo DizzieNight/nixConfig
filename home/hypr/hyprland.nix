@@ -108,10 +108,6 @@
                 "$mod, page_down, workspace, e-1"
                 "$mod, page_up, workspace, e+1"
 
-                # Move/resize windows with mod + LMB/RMB and dragging
-                "$mod, mouse:272, movewindow"
-                "$mod, mouse:273, resizeactive"
-
                 # Hyprshot keybinds
                 "$mod, PebooksRINT, exec, hyprshot -m window # Screenshot a window"
                 ", PRINT, exec, hyprshot -m output # Screenshot a monitor"
@@ -122,7 +118,22 @@
 
                 # Hyprlock
                 "$mod, P, exec, pactl set-sink-mute @DEFAULT_SINK@ 1 && hyprlock"
+            ];
 
+            binde = [
+                "$mod, l, resizeactive, 50 0"
+                "$mod, h, resizeactive, -50 0"
+                "$mod, k, resizeactive, 0 -40"
+                "$mod, j, resizeactive, 0 40"
+            ];
+
+            bindm = [
+                # Move/resize windows with mod + LMB/RMB and dragging
+                "$mod, mouse:272, movewindow"
+                "$mod, mouse:273, resizewindow"
+            ];
+
+            bindel = [
                 # Laptop multimedia keys for volume and LCD brightness
                 ",XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
                 ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
@@ -130,7 +141,9 @@
                 ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
                 ",XF86MonBrightnessUp, exec, brightnessctl s 10%+"
                 ",XF86MonBrightnessDown, exec, brightnessctl s 10%-"
+            ];
 
+            bindl = [
                 # Requires playerctl
                 ", XF86AudioNext, exec, playerctl next"
                 ", XF86AudioPause, exec, playerctl play-pause"
