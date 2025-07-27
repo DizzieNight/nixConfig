@@ -120,12 +120,25 @@
                 "$mod, P, exec, pactl set-sink-mute @DEFAULT_SINK@ 1 && hyprlock"
             ];
 
-            binde = [
-                "$shiftmod, l, resizeactive, 50 0"
-                "$shiftmod, h, resizeactive, -50 0"
-                "$shiftmod, k, resizeactive, 0 -40"
-                "$shiftmod, j, resizeactive, 0 40"
+            bind = [
+                # Submap resize window mode
+                "$mod, R, submap, resize"
             ];
+
+            submap = [ "resize" ];
+
+            binde = [
+                ", l, resizeactive, 10 0"
+                ", h, resizeactive, -10 0"
+                ", k, resizeactive, 0 -10"
+                ", j, resizeactive, 0 10"
+            ];
+
+            bind = [
+                ", escape, submap, reset"
+            ];
+
+            submap = [ "reset" ];
 
             bindm = [
                 # Move/resize windows with mod + LMB/RMB and dragging
