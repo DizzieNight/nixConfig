@@ -25,7 +25,7 @@
         inkscape
         superfile
         bluetui
-        heoric-unwrapped
+        heroic-unwrapped
     # K8s Tools
         kubectl
         kubectx

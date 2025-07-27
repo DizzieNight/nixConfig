@@ -1,17 +1,19 @@
 {lib, config, pkgs, ...}:
 {
-    options = [
+    options = {
         
-    ];
+    };
     
-    config = [
+    config = {
         programs = {
             steam = {
                 enable = true;
                 package = pkgs.steam.override {
-                    MANGOHUD = true;
+                    extraEnv = {
+                        MANGOHUD = true;
+                    };
                 };
             };
         };
-    ];
+    };
 }

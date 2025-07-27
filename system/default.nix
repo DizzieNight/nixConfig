@@ -107,6 +107,6 @@
 
         # Custom Modules
         # hyprland.enable = lib.mkDefault true;
-        gamingmode.enable = lib.mkDefault true;
+        # gamingmode.enable = lib.mkDefault true;
     };
 }
