@@ -6,7 +6,7 @@
     # };
     services.pass-secret-service = {
         enable = true;
-        package = pkgs.pass;
+        package = pkgs.pass-secret-service;
         storePath = "${config.home.homeDirectory}./password-store";
     };
     programs.password-store = {

@@ -8,7 +8,6 @@
         dbus
         bridge-utils
         libsecret
-        pass-secret-service
     # Apps
         protonmail-bridge-gui
         putty
