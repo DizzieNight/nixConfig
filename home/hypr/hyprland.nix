@@ -121,10 +121,10 @@
             ];
 
             binde = [
-                "$mod, l, resizeactive, 50 0"
-                "$mod, h, resizeactive, -50 0"
-                "$mod, k, resizeactive, 0 -40"
-                "$mod, j, resizeactive, 0 40"
+                "$shiftmod, l, resizeactive, 50 0"
+                "$shiftmod, h, resizeactive, -50 0"
+                "$shiftmod, k, resizeactive, 0 -40"
+                "$shiftmod, j, resizeactive, 0 40"
             ];
 
             bindm = [
