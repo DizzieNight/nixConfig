@@ -129,12 +129,12 @@
             #     "reset"
             # ];
             #
-            # binde = [
-            #     ", l, resizeactive, 10 0"
-            #     ", h, resizeactive, -10 0"
-            #     ", k, resizeactive, 0 -10"
-            #     ", j, resizeactive, 0 10"
-            # ];
+            binde = [
+                "$mod shift, l, resizeactive, 10 0"
+                "$mod shift, h, resizeactive, -10 0"
+                "$mod shift, k, resizeactive, 0 -10"
+                "$mod shift, j, resizeactive, 0 10"
+            ];
 
             bindm = [
                 # Move/resize windows with mod + LMB/RMB and dragging
