@@ -9,12 +9,12 @@
         ./audio.nix
         ./boot.nix
         ./users.nix
-        ./gamingmode.nix
         ./security.nix
         ./displaymanager.nix
         ./hyprland.nix
         ./networking.nix
         ./shell.nix
+        ./apps
     ];
 
     config = {
