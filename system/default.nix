@@ -24,6 +24,7 @@
         ./shell.nix
         ./gamingmode
         ./creativemode
+        ./laptop.nix
     ];
 
     config = {
@@ -100,22 +101,7 @@
         # Allow unfree packages
         nixpkgs.config.allowUnfree = true;
 
-        # Enable touchpad support (enabled default in most desktopManager).
-        services.libinput = lib.mkIf config.laptop.enable {
-            enable = true;
-        };
-
-        # Enable power-profiles-daemon
-        services.power-profiles-daemon = {
-            enable = true;
-            package = pkgs.power-profiles-daemon;
-        };
-
         # Enable tailscale
         services.tailscale.enable = true;
-
-        # Custom Modules
-        # hyprland.enable = lib.mkDefault true;
-        # gamingmode.enable = lib.mkDefault true;
     };
 }
