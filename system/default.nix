@@ -23,6 +23,7 @@
         ./networking.nix
         ./shell.nix
         ./gamingmode
+        ./creativemode
     ];
 
     config = {
@@ -100,7 +101,7 @@
         nixpkgs.config.allowUnfree = true;
 
         # Enable touchpad support (enabled default in most desktopManager).
-        services.libinput = lib.mkIf config.system.laptop {
+        services.libinput = lib.mkIf config.laptop.enable {
             enable = true;
         };
 

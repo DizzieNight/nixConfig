@@ -23,7 +23,8 @@
 
   system.stateVersion = "25.05"; # Did you read the comment?
 
-  system.laptop = true; 
+  laptop.enable = true; 
   gamingmode.enable = true;
+  creativemode.enable = true;
 }
 

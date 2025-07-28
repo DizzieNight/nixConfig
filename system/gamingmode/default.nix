@@ -1,4 +1,4 @@
-{config, lib, ...}:
+{pkgs, user, config, lib, ...}:
 let
   cfg = config.gamingmode;
 in 
@@ -8,7 +8,6 @@ in
     ];
 
     options.gamingmode = {
-        enable = lib.mkEnableOption "Enable Gamingmode";
     };
 
     config = lib.mkIf cfg.enable {
