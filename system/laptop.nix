@@ -4,10 +4,10 @@ let
 in 
 {
     config = lib.mkIf cfg.enable {
-        services = [
+        services = {
         # Enable power-profiles-daemon
             power-profiles-daemon = {
-                enable = true;
+                enable = false;
                 package = pkgs.power-profiles-daemon;
             };
         # Enable touchpad support (enabled default in most desktopManager).
@@ -37,7 +37,7 @@ in
 
                 };
             };
-        ];
+        };
         powerManagement.powertop.enable = true;
     };
 }
