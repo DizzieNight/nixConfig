@@ -5,13 +5,13 @@ in
 {
     imports = [
         ./steam.nix
+        ./heroic.nix
     ];
 
     options.gamingmode = {
         enable = lib.mkEnableOption "Enable Gamingmode";
     };
 
-    config = lib.mkIf cfg.enable {
-        steam.enable = true;
+    config = {
     };
 }

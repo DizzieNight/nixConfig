@@ -1,15 +1,14 @@
 {lib, config, pkgs, ...}:
 let
-  cfg = config.steam;
+  cfg = config.gamingmode;
 in 
 {
     options.steam = {
-        enable = lib.mkEnableOption "Enable Steam";
     };
     
-    config = {
+    config = lib.mkIf cfg.enable {
         programs = {
-            steam = lib.mkIf cfg.enable {
+            steam = {
                 enable = true;
                 package = pkgs.steam.override {
                     extraEnv = {
