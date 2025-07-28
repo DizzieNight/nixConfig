@@ -14,7 +14,7 @@
         ./hyprland.nix
         ./networking.nix
         ./shell.nix
-        ./apps
+        ./gamingmode
     ];
 
     config = {
