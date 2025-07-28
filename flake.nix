@@ -18,11 +18,12 @@
         system = "x86_64-linux";
         pkgs = nixpkgs.legacyPackages.${system};
         user = "zander";
+        wallpaper = "/home/zander/Nextcloud/Pictures/Wallpapers/cyberpunk.png";
       in
       {
         nixosConfigurations = {
             fw13 = nixpkgs.lib.nixosSystem {
-                specialArgs = {inherit user inputs system;};
+                specialArgs = {inherit wallpaper user inputs system;};
                 modules = [
                     ./hosts/fw13/configuration.nix
                     ./system

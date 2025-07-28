@@ -6,6 +6,7 @@
         ./waybar/waybar.nix
         ./hyprpaper.nix
         ./hyprlock.nix
+        ./hypridle.nix
         ./rofi/rofi.nix
     ];
 

@@ -2,7 +2,7 @@
 # your system. Help is available in the configuration.nix(5) man page, on
 # https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
-{user, inputs, config, lib, pkgs, ... }:
+{wallpaper, user, inputs, config, lib, pkgs, ... }:
 
 {
   imports =
@@ -12,7 +12,7 @@
     ];
 
   home-manager = {
-    extraSpecialArgs = {inherit user inputs;};
+    extraSpecialArgs = {inherit wallpaper user inputs;};
     users = {
         ${user} = import ../../home;
     };
