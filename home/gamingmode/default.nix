@@ -4,7 +4,7 @@ let
 in 
 {
     imports = [
-        ./steam.nix
+        ./lutris.nix
     ];
 
     options.gamingmode = {
@@ -12,6 +12,6 @@ in
     };
 
     config = lib.mkIf cfg.enable {
-        steam.enable = true;
+        lutris.enable = true;
     };
 }

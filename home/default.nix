@@ -5,6 +5,7 @@
         ./tools
         ./hypr
         ./external
+        ./gamingmode
     ];
 
     home = {
