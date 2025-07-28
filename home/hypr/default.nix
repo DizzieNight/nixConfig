@@ -2,7 +2,7 @@
 {
     imports = [
         ./cliphist.nix
-        ./hyprland.nix
+        ./hyprland
         ./waybar/waybar.nix
         ./hyprpaper.nix
         ./hyprlock.nix

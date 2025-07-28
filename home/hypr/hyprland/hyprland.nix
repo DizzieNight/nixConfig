@@ -27,9 +27,9 @@
                 # ""${pkgs.nextcloud-client}" --background"
             ];
 
-            monitor = [
-                "eDP-1,preferred,0x1440, 1.566667"
-            ];
+            # monitor = [
+            #     "eDP-1,preferred,0x1440, 1.566667"
+            # ];
 
             general = {
                 "$mod" = "SUPER";
