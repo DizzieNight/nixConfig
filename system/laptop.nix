@@ -37,7 +37,15 @@ in
 
                 };
             };
+            fprintd = {
+                enable = true;
+                tod.driver = pkgs.libfprint-2-tod1-goodix;
+            };
         };
         powerManagement.powertop.enable = true;
+        systemd.services.fprintd = {
+            wantedBy = [ "multi-user.target" ];
+            serviceConfig.Type = "simple";
+        };
     };
 }

@@ -43,7 +43,6 @@
             home-manager
             brightnessctl
             easyeffects
-            fprintd
             pwvucontrol
             tailscale
             tealdeer
