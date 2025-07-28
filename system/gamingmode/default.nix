@@ -5,13 +5,18 @@ in
 {
     imports = [
         ./steam.nix
-        ./heroic.nix
     ];
 
     options.gamingmode = {
         enable = lib.mkEnableOption "Enable Gamingmode";
     };
 
-    config = {
+    config = lib.mkIf cfg.enable {
+       users.users.${user} = {
+        packages = with pkgs; [
+            heroic-unwrapped
+            goverlay
+        ];
+       }; 
     };
 }

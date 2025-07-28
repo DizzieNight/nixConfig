@@ -11,23 +11,16 @@
     # Apps
         protonmail-bridge-gui
         putty
-        gimp3
-        godot
-        goverlay
         obsidian
-        goxel
         kdePackages.gwenview
         kdePackages.kdeconnect-kde 
         lazygit
         libreoffice-fresh
-        kubernetes-helm
-        impala
-        inkscape
         superfile
         bluetui
-        heroic-unwrapped
     # K8s Tools
         kubectl
+        kubernetes-helm
         kubectx
         kubecm
         kubent

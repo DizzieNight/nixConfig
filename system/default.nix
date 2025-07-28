@@ -1,8 +1,16 @@
 {inputs, config, lib, pkgs, ...}:
 
 {
-    options.system = {
-        laptop = lib.mkEnableOption "laptop";
+    options = {
+        laptop = {
+            enable = lib.mkEnableOption "Install laptop specific packages";
+        };
+        gamingmode = {
+            enable = lib.mkEnableOption "Install gaming apps";
+        };
+        creativemode = {
+            enable = lib.mkEnableOption "Install creative apps";
+        };
     };
 
     imports = [
