@@ -205,4 +205,7 @@ return{
     {
         'brenoprata10/nvim-highlight-colors'
     },
+    {
+        "tpope/vim-surround",
+    },
 }

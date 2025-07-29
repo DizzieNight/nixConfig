@@ -28,10 +28,16 @@ window#waybar {
   padding: 0px 15px 0px 0px;
 }
 
-#custom-tailscale,
-#battery {
+#custom-tailscale {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  color: @color0;
+  background-color: @color4;
+  margin: 5px 0px 5px 0px;
+  padding: 8px;
+}
+#battery {
+  border-radius: 5px;
   color: @color0;
   background-color: @color4;
   margin: 5px 0px 5px 0px;

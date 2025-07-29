@@ -229,8 +229,8 @@
     "group/power": {
       "orientation": "horizontal",
       "modules": [
-        "battery",
-        "power-profiles-daemon"
+        "battery"
+        // "power-profiles-daemon"
       ]
     },
     "group/networking": {
