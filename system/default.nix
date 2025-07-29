@@ -27,6 +27,7 @@
         ./laptop.nix
         ./pam.nix
         ./bluetooth.nix
+        ./flatpak.nix
     ];
 
     config = {
