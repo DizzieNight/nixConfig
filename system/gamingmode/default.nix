@@ -15,6 +15,8 @@ in
         packages = with pkgs; [
             heroic-unwrapped
             goverlay
+            protonplus
+            protonup-qt
         ];
        }; 
     };
