@@ -26,6 +26,7 @@
         ./creativemode
         ./laptop.nix
         ./pam.nix
+        ./bluetooth.nix
     ];
 
     config = {
