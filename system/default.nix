@@ -25,6 +25,7 @@
         ./gamingmode
         ./creativemode
         ./laptop.nix
+        ./pam.nix
     ];
 
     config = {
