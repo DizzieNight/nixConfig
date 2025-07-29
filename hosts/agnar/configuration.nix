@@ -19,12 +19,12 @@
   };
 
   # Define Hostname
-  networking.hostName = "fw13";
+  networking.hostName = "agnar";
 
   system.stateVersion = "25.05"; # Did you read the comment?
 
-  laptop.enable = true; 
-  gamingmode.enable = false;
-  creativemode.enable = false;
+  laptop.enable = false; 
+  gamingmode.enable = true;
+  creativemode.enable = true;
 }
 
