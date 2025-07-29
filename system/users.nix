@@ -18,7 +18,7 @@
         libreoffice-fresh
         superfile
         bluetui
-        inputs.zen-browser.packages."${system}".default
+        # inputs.zen-browser.packages."${system}".default
     # K8s Tools
         kubectl
         kubernetes-helm

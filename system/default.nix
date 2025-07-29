@@ -105,5 +105,8 @@
 
         # Enable tailscale
         services.tailscale.enable = true;
+
+        # Enable flakes
+        nix.settings.experimental-features = [ "nix-command" "flakes" ];
     };
 }
