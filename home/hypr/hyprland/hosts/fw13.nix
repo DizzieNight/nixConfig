@@ -1,9 +1,9 @@
-{lib, config, ...}:
+{lib, osConfig, ...}:
 let
-  cfg = config.host.fw13;
+  cfg = osConfig.hyprland.host;
 in 
 {
-    config = lib.mkIf cfg.enable {
+    config = lib.mkIf (cfg == "fw13") {
        wayland.windowManager.hyprland = {
             settings = {
                 monitor = [

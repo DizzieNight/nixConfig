@@ -2,7 +2,7 @@
 
 {
     imports = [
-        ./librewolf.nix
+        # ./librewolf.nix
         ./thunderbird.nix
         ./nextcloud.nix
     ];

@@ -26,5 +26,7 @@
   laptop.enable = true; 
   gamingmode.enable = false;
   creativemode.enable = false;
+  hyprland.host = "fw13";
+  # home-manager.users.${user}.hyprland.host = "fw13";
 }
 

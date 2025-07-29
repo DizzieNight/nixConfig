@@ -1,4 +1,4 @@
-{user, pkgs, ...}:
+{inputs, user, pkgs, ...}:
 {
   users.users.${user} = {
     isNormalUser = true;
@@ -18,6 +18,7 @@
         libreoffice-fresh
         superfile
         bluetui
+        inputs.zen-browser.packages."${system}".default
     # K8s Tools
         kubectl
         kubernetes-helm

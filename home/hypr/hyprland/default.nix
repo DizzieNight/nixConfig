@@ -5,15 +5,13 @@
         ./hosts/fw13.nix
     ];
 
-    options = {
-        host = {
-            fw13 = {
-                enable = lib.mkEnableOption "Use fw13 host specific config, eg. monitor config";
-            };
-        };
-    };
+    # options = {
+    #     hyprland.host = lib.mkOption {
+    #         type = lib.types.str;
+    #         description = "Option to select the monitor config for hyprland";
+    #     };
+    # };
 
     config = {
-       host.fw13.enable = true; 
     };
 }
