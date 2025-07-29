@@ -26,5 +26,6 @@
   laptop.enable = false; 
   gamingmode.enable = true;
   creativemode.enable = true;
+  hyprland.host = "${config.networking.hostName}";
 }
 
